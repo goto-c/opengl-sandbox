@@ -49,7 +49,7 @@ class ModelViewer : public SandboxBase
         static char modelPath[100] = {"assets/sponza/sponza.obj"};
         ImGui::InputText("Model", modelPath, 100);
         if (ImGui::Button("Load Model")) {
-            scene.setModel({std::string(CMAKE_SOURCE_DIR) + "/" + modelPath});
+            scene.setModel(std::string(CMAKE_SOURCE_DIR) + "/" + modelPath);
         }
 
         ImGui::Separator();

@@ -80,6 +80,7 @@ class Scene
     void draw(const Pipeline& pipeline) const;
 
     void setModel(Model&& model);
+    void setModel(const std::string& model);
 
     void setPointLight(const PointLight& light);
 

@@ -34,6 +34,7 @@ void Scene::draw(const Pipeline& pipeline) const
 }
 
 void Scene::setModel(Model&& model) { this->model = std::move(model); }
+void Scene::setModel(const std::string& model) { this->model = Model(model); }
 
 void Scene::setPointLight(const PointLight& light) { pointLight = light; }
 
